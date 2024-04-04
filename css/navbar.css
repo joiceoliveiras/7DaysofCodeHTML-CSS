@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+   
+}
+p{
+    font-weight: 500px;
+    font-size: 18px;
+    color: #3A404E;
+    margin-left: 4px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px ;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    height: 24px;
+    line-height: 24px;
+   
+}
+.nav-itens{
+    list-style-type: none;
+    display: flex;
+font-size: 16px;
+}
+
+.nav-itens > li{
+    padding-left: 20px;
+    color:#3A404E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.login{
+    padding: 10px 40px;
+    font-size: 15px;
+    background-color: #ffff ;
+    border: none;
+    color: #667085;
+    cursor: pointer;
+    transition: 1s background;
+   
+
+}
+
+
+
+.cadastro{
+    padding: 10px 40px;
+    font-size: 15px;
+    background-color:#8e2424;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+   
+}
