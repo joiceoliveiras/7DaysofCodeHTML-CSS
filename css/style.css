@@ -66,7 +66,8 @@ font-size: 16px;
 }
 
 
-header{
+header {
+    
     position: absolute;
 
     top: 50%;
@@ -74,9 +75,9 @@ header{
     left: 50%;
     
     transform: translate(-50%, -50%);
-    
+
     background-color: #FFFFFF;
-    ;
+    margin-top: -40px;
 }
 
 .header-itens{
@@ -111,5 +112,39 @@ span{
     font-size: 20px;
     line-height: 30px;
     color: #667085;
-    ;
+    
+}
+
+.seccao{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px;
+}
+
+section{
+    margin-top: 400px;
+    
+}
+
+.metrics > h1{
+    color: #8E2424;
+    font-weight: 600px;
+    font-size: 60px;
+    line-height: 72px;
+
+}
+
+.metrics > h1 > h2{
+    color: #101828;
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.metrics > h1 > h2 > p{
+    color: #667085;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
 }
