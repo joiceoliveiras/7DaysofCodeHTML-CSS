@@ -1,150 +1,326 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    font-weight: 500;
-   
-}
-p{
-    font-weight: 500px;
-    font-size: 18px;
-    color: #3A404E;
-    margin-left: 4px;
-
 }
 
-nav{
+.navbar {
     display: flex;
-    justify-content: space-around;
-    margin-top:20px ;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    color: #667085;
+    font-weight: 500;
 }
+
+
 
 .logo{
     display: flex;
-    height: 24px;
-    line-height: 24px;
-   
 }
-.nav-itens{
+
+.logo img {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.nav-links {
     list-style-type: none;
     display: flex;
-font-size: 16px;
 }
 
-.nav-itens > li{
-    padding-left: 20px;
-    color:#3A404E;
-    text-decoration: none;
+.nav-links li {
+    padding: 0 10px;
     cursor: pointer;
 }
 
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
 .login{
-    padding: 10px 40px;
-    font-size: 15px;
-    background-color: #ffff ;
+    background-color: #ffff;
     border: none;
-    color: #667085;
-    cursor: pointer;
-    
-
+    color:#667085;
 }
-
-
 
 .cadastro{
-    padding: 10px 40px;
-    font-size: 15px;
-    background-color:#8e2424;
+    background-color: #8E2424;
+    color: #ffff;
     border: none;
-    color: #fff;
+    font-weight: 500;
     border-radius: 8px;
-    cursor: pointer;
-   
 }
 
-
-header {
-    
-    position: absolute;
-
-    top: 50%;
-    
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-
-    background-color: #FFFFFF;
-    margin-top: -40px;
+.about {
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.header-itens{
-    display: grid;
-    place-items: center;
-}
-
-.abt-paragraph{
-    width: 78px;
-    height: 24px;
-    color: #8E2424;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-#title{
-    width: 603px;
-    height: 60px;
-    font-weight: 600px;
+.about h2 {
+    color: #101828;
     font-size: 48px;
     line-height: 60px;
-    color: #101828;
-    
-
+    font-weight: 600;
 }
 
-span{
-    width: 791px;
-    height: 60px;
-    font-weight: 400px;
-    font-size: 20px;
-    line-height: 30px;
-    color: #667085;
-    
-}
-
-.seccao{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 40px;
-}
-
-section{
-    margin-top: 400px;
-    
-}
-
-.metrics > h1{
+#about-paragraph {
     color: #8E2424;
-    font-weight: 600px;
-    font-size: 60px;
-    line-height: 72px;
-
-}
-
-.metrics > h1 > h2{
-    color: #101828;
-    font-weight: 500px;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.metrics > h1 > h2 > p{
-    color: #667085;
-    font-weight: 400px;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 600;
+}
+
+.about-content > p {
+    color: #667085;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.metrics-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.metrics {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.metrics h1 {
+    color: #8E2424;
+    line-height: 72px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.metrics h2 {
+    color: #101828;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.metrics p {
+    color: #667085;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.job-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px 20px;
+}
+
+.job-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-content p {
+    color: #8E2424;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.opening-paragraph {
+    padding: 4px 12px 4px 12px;
+    background-color:rgba(142, 36, 36, 0.05);
+    border-radius: 16px; 
+    display: inline-block;
+}
+
+.job-content h1 {
+    color: #101828;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.job-content p:last-child {
+    color: #667085;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.job-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.vaga {
+    padding-left: 50vh;
+    border-radius: 5px; 
+    margin: 0;
+    width: 768px;
+    
+}
+
+.vagas > h1{
+    width: 768px;
+    height: 30px;
+    color: #101828;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 50vh;
+    margin-top: 40px;
+    margin-bottom:20px ;
+}
+
+.info-salario {
+    border: 1px solid #EAECF0; 
+    border-width: 1px;
+    padding: 8px; 
+    border-radius: 16px; 
+    
+}
+
+.titulo-vaga {
+    width: 720px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828; 
+    margin-bottom: 10px; 
+}
+
+.info-salario span {
+    display: block;
+    margin: 10px; /
+    
+}
+
+.informacoes-flex {
+    display: flex; 
+    color: #667085;
+    
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+.informacoes-flex span {
+    margin-right: 10px; 
+}
+
+#feedback-box{
+    margin: 64px;
+    padding: 64px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    background-color: #C3191908;
+
+}
+
+#feedback-paragraph{
+    margin-bottom: 4px;
+    color: #8E2424;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+}
+
+#feedback-text{
+    margin-top: 9px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    color: #101828;
+    text-align: center;
+}
+
+#round-image{
+    margin-top: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 200px;
+}
+
+#name{
+    margin-top: 10px;
+margin-bottom: 9px;
+font-size: 14px;
+font-weight: 400;
+color: #101828;
+text-align: center;
+}
+
+#charge{
+color: #667085;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+}
+
+footer{
+    background-color: #F9FAFB;
+    padding: 100px;
+}
+
+footer > div > h1{
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 600;
+ text-align: center;
+ color: #101828;
+}
+
+#footer-paragraph{
+    margin-bottom: 20px;
+    color: #667085;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#email{
+    width: 200px;
+    border: 1px solid #D0D5DD;
+    border-radius:8px;
+    padding: 8px 8px 8px 8px;
+    margin: 5px;
+}
+
+#cadastrar-footer{
+    color: #fff;
+    background-color: #8E2424;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+#copyright-text{
+    margin-top: 20px;
+color: #98A2B3;
+font-size: 16px;
+font-weight: 400;
+
+}
+
+#footer-box{
+    display: grid;
+    place-items: center;
 }
